@@ -1,11 +1,40 @@
-var test = "test";
-var test1 = "test2";
-var test3 = "test3";
+const Canvas = require("./canvasView.es6");
+const Player = require("./playerModule.es6");
+const KeyModule = require("./keyModule.es6");
+const Map = require("./map.es6");
 
 
-function oef() {
-    console.log(test, test1);
+class Controller {
+  constructor(){
+    this.canvas = new Canvas();
+    this.keyModule = new KeyModule();
+    this.player = new Player();
+    this.map = new Map();
+  }
+  loop(){
+    this.canvas.clearRect(); // clears canvas
+
+    // Map
+    // =============================================================================
+
+
+    // draw
+    // =============================================================================
+    this.canvas.draw(this.player.playerProps);
+    this.canvas.drawMap(this.map.mapLayout);
+
+
+    // player
+    // =============================================================================
+    this.player.moveMent(this.keyModule.key, this.canvas.size);
+
+
+
+    window.requestAnimationFrame(() => { // loops the main content
+      this.loop();
+    });
+  };
 }
 
-oef();
-console.log(test1);
+const contr = new Controller();
+contr.loop();
