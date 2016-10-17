@@ -1,26 +1,44 @@
 class Player {
   constructor(){
     this.props = {
-      x: 10,
-      y: 10,
-      width: 20,
-      height: 20,
+      x: 1,
+      y: 1,
+      width: 1,
+      height: 1,
     };
-    this.speed = 5;
+    this.speed = 1;
+    this.lastMove;
   }
-  moveMent(direction, size){
-    if (direction.up && this.props.y > 20){
+  moveMent(direction, map){
+
+
+
+    if(Date.now() - this.lastMove <= 100)
+      return;
+
+    this.lastMove = Date.now();
+
+    if (direction.up){
+      if (map.map[this.props.y-1][this.props.x] === 1)
+        return;
       this.props.y -= this.speed;
     }
-    if (direction.down && this.props.y < size.cHeight - this.props.height - 20){
+    else if (direction.down){
+      if (map.map[this.props.y+1][this.props.x] === 1)
+        return;
       this.props.y += this.speed;
     }
-    if (direction.left && this.props.x > 20){
+    else if (direction.left){
+      if (map.map[this.props.y][this.props.x-1] === 1)
+        return;
       this.props.x -= this.speed;
     }
-    if (direction.right && this.props.x < size.cWidth - this.props.width - 20){
+    else if (direction.right){
+      if (map.map[this.props.y][this.props.x+1] === 1)
+        return;
       this.props.x += this.speed;
     }
+
   }
 
   get playerProps(){

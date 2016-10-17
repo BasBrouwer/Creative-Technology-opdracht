@@ -2,6 +2,7 @@ class Canvas {
   constructor(){
     this.c = document.getElementById("myCanvas");
     this.ctx = this.c.getContext("2d");
+    this.scale = 20;
   }
 
   clearRect(){
@@ -10,22 +11,22 @@ class Canvas {
 
   draw(props) {
     this.ctx.fillStyle = "green";
-    this.ctx.fillRect(props.x, props.y, props.width, props.height);
+    this.ctx.fillRect(props.x * this.scale, props.y * this.scale, props.width * this.scale, props.height * this.scale);
   }
 
   drawMap(mapLayout){
     mapLayout.map.forEach( (row, i) => {
       row.forEach((tile, j) => {
         if (tile !== 0) {
-          this.drawTile(j,i, mapLayout);
+          this.drawTile(j,i);
         }
       })
     })
   }
 
-  drawTile(x, y, mapLayout){
+  drawTile(x, y){
     this.ctx.fillStyle = "red";
-    this.ctx.fillRect((x * mapLayout.tile), (y * mapLayout.tile), mapLayout.tile, mapLayout.tile);
+    this.ctx.fillRect((x * this.scale), (y * this.scale), this.scale, this.scale);
   }
 
   get size(){
