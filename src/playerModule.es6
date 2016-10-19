@@ -9,12 +9,38 @@ class Player {
     this.speed = 1;
     this.lastMove;
   }
-  moveMent(direction, map){
+  // movement(direction, map){
+  //   if(Date.now() - this.lastMove <= 100)
+  //     return;
+  //
+  //   this.lastMove = Date.now();
+  //
+  //   if (direction.up){
+  //     if (map.map[this.props.y-1][this.props.x] === 1)
+  //       return;
+  //     this.props.y -= this.speed;
+  //   }
+  //   else if (direction.down){
+  //     if (map.map[this.props.y+1][this.props.x] === 1)
+  //       return;
+  //     this.props.y += this.speed;
+  //   }
+  //   else if (direction.left){
+  //     if (map.map[this.props.y][this.props.x-1] === 1)
+  //       return;
+  //     this.props.x -= this.speed;
+  //   }
+  //   else if (direction.right){
+  //     if (map.map[this.props.y][this.props.x+1] === 1)
+  //       return;
+  //     this.props.x += this.speed;
+  //   }
+  //
+  // }
 
-
-
+  movement(direction, map){
     if(Date.now() - this.lastMove <= 100)
-      return;
+        return;
 
     this.lastMove = Date.now();
 
@@ -38,7 +64,6 @@ class Player {
         return;
       this.props.x += this.speed;
     }
-
   }
 
   get playerProps(){

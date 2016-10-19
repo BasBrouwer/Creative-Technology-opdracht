@@ -17,15 +17,14 @@ class Canvas {
   drawMap(mapLayout){
     mapLayout.map.forEach( (row, i) => {
       row.forEach((tile, j) => {
-        if (tile !== 0) {
-          this.drawTile(j,i);
-        }
+          this.drawTile(j,i, tile);
       })
     })
   }
 
-  drawTile(x, y){
-    this.ctx.fillStyle = "red";
+  drawTile(x, y, tile){
+
+    this.ctx.fillStyle = (tile === 1) ? "red" : (tile === 2) ? "green":"black" ;
     this.ctx.fillRect((x * this.scale), (y * this.scale), this.scale, this.scale);
   }
 
