@@ -2,7 +2,7 @@ class Canvas {
   constructor(){
     this.c = document.getElementById("myCanvas");
     this.ctx = this.c.getContext("2d");
-    this.scale = 20;
+    this.scale = 40;
   }
 
   clearRect(){
@@ -24,7 +24,7 @@ class Canvas {
 
   drawTile(x, y, tile){
 
-    this.ctx.fillStyle = (tile === 1) ? "red" : (tile === 2) ? "green":"black" ;
+    this.ctx.fillStyle = (tile === 9) ? "red" : (tile === 2) ? "green" : (tile === 1)? "#ccc" : "black" ;
     this.ctx.fillRect((x * this.scale), (y * this.scale), this.scale, this.scale);
   }
 

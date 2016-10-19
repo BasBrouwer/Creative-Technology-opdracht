@@ -11,6 +11,8 @@ class Controller {
     this.player = new Player();
     this.map = new Map();
 
+    this.score = 0;
+
 
     this.keyModule.keyPress( (data)=> {
       this.handleKey(data);
@@ -27,13 +29,12 @@ class Controller {
     // Map
     // =============================================================================
     this.canvas.drawMap(this.map.mapLayout);
+    this.score = this.map.mapSpot(this.player.playerProps);
 
     // player
     // =============================================================================
     this.canvas.draw(this.player.playerProps);
-
-
-
+    this.player.score(this.score);
 
     window.requestAnimationFrame(() => { // loops the main content
       this.loop();
