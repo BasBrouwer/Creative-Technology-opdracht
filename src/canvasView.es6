@@ -127,10 +127,10 @@ class Canvas {
   loadImages(){
     for(var t = 0; t < 12; t++) {
       this.mineralTiles[t] = new Image();
-      this.mineralTiles[t].src = "../img/minerals/" + (t+1) + ".png" ;
+      this.mineralTiles[t].src = "./img/Minerals/" + (t+1) + ".png" ;
     }
     this.playerGfx[1] = new Image();
-    this.playerGfx[1].src = "../img/1.png";
+    this.playerGfx[1].src = "./img/1.png";
   }
 }
 
