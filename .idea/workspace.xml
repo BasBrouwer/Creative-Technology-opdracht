@@ -3,6 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="cf6022b0-8c82-41f2-a3ee-b2bd7db47bdb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/script.js" afterPath="$PROJECT_DIR$/dist/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/script.js.map" afterPath="$PROJECT_DIR$/dist/script.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/style.scss" afterPath="$PROJECT_DIR$/sass/style.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/canvasView.es6" afterPath="$PROJECT_DIR$/src/canvasView.es6" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/map.es6" afterPath="$PROJECT_DIR$/src/map.es6" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/playerModule.es6" afterPath="$PROJECT_DIR$/src/playerModule.es6" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/script.es6" afterPath="$PROJECT_DIR$/src/script.es6" />
     </list>
     <ignored path="Boilerplate.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,21 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="script.es6" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/script.es6">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="7" selection-start-line="39" selection-start-column="4" selection-end-line="41" selection-end-column="7" />
+            <state relative-caret-position="150">
+              <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -48,19 +46,35 @@
       <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+            <state relative-caret-position="480">
+              <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="canvasView.es6" pinned="false" current-in-tab="false">
+      <file leaf-file-name="script.es6" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/script.es6">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="canvasView.es6" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/canvasView.es6">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1935">
-              <caret line="129" column="41" selection-start-line="129" selection-start-column="41" selection-end-line="129" selection-end-column="41" />
-              <folding />
+            <state relative-caret-position="117">
+              <caret line="60" column="73" selection-start-line="60" selection-start-column="73" selection-end-line="60" selection-end-column="73" />
+              <folding>
+                <element signature="n#!!block;n#clearRect#0;n#Canvas#0" expanded="false" />
+                <element signature="n#!!block;n#loadImages#0;n#Canvas#0" expanded="false" />
+                <element signature="n#!!block;n#playerImage#0;n#Canvas#0" expanded="false" />
+                <element signature="e#2746#3602#0" expanded="false" />
+                <element signature="e#4103#4869#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,31 +94,11 @@
       <file leaf-file-name="playerModule.es6" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/playerModule.es6">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="47" column="31" selection-start-line="44" selection-start-column="4" selection-end-line="47" selection-end-column="31" />
+            <state relative-caret-position="365">
+              <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
               <folding>
-                <element signature="e#177#205#0" expanded="false" />
+                <element signature="e#287#315#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gulpfile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="47" selection-start-line="0" selection-start-column="0" selection-end-line="47" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -112,9 +106,14 @@
       <file leaf-file-name="map.es6" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/map.es6">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="1020">
+              <caret line="68" column="39" selection-start-line="68" selection-start-column="39" selection-end-line="68" selection-end-column="39" />
+              <folding>
+                <element signature="e#4495#4634#0" expanded="false" />
+                <element signature="e#4728#4883#0" expanded="false" />
+                <element signature="e#4925#5080#0" expanded="false" />
+                <element signature="e#5105#5244#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -145,12 +144,12 @@
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/src/collisionModule.es6" />
         <option value="$PROJECT_DIR$/src/keyModule.es6" />
-        <option value="$PROJECT_DIR$/src/playerModule.es6" />
-        <option value="$PROJECT_DIR$/src/script.es6" />
-        <option value="$PROJECT_DIR$/src/map.es6" />
         <option value="$PROJECT_DIR$/sass/style.scss" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/src/map.es6" />
         <option value="$PROJECT_DIR$/src/script.es6" />
+        <option value="$PROJECT_DIR$/src/script.es6" />
+        <option value="$PROJECT_DIR$/src/playerModule.es6" />
         <option value="$PROJECT_DIR$/src/canvasView.es6" />
       </list>
     </option>
@@ -165,8 +164,9 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="y" value="12" />
     <option name="width" value="2560" />
-    <option name="height" value="1440" />
+    <option name="height" value="1417" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -241,8 +241,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -367,7 +367,8 @@
       <workItem from="1477577437179" duration="1921000" />
       <workItem from="1477648952165" duration="597000" />
       <workItem from="1477654237240" duration="596000" />
-      <workItem from="1477853156132" duration="627000" />
+      <workItem from="1477853156132" duration="665000" />
+      <workItem from="1478012096291" duration="9210000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1476269336840</created>
@@ -425,11 +426,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477858089314</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update">
+      <created>1477858254963</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1477858254963</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72843000" />
+    <option name="totallyTimeSpent" value="82091000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -441,14 +449,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
+    <frame x="0" y="12" width="2560" height="1417" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13666798" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32968238" sideWeight="0.49815303" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32968238" sideWeight="0.5039578" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1236333" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12339137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.49604222" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -519,7 +527,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding />
+          <folding>
+            <element signature="n#!!block;n#clearRect#0;n#Canvas#0" expanded="false" />
+            <element signature="n#!!block;n#loadImages#0;n#Canvas#0" expanded="false" />
+            <element signature="n#!!block;n#playerImage#0;n#Canvas#0" expanded="false" />
+            <element signature="e#2746#3602#0" expanded="false" />
+            <element signature="e#4103#4869#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -535,7 +549,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#177#205#0" expanded="false" />
+            <element signature="e#287#315#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -554,7 +568,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
-          <folding />
+          <folding>
+            <element signature="e#4495#4634#0" expanded="false" />
+            <element signature="e#4728#4883#0" expanded="false" />
+            <element signature="e#4925#5080#0" expanded="false" />
+            <element signature="e#5105#5244#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -578,7 +597,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="n#!!block;n#clearRect#0;n#Canvas#0" expanded="false" />
+            <element signature="n#!!block;n#loadImages#0;n#Canvas#0" expanded="false" />
+            <element signature="n#!!block;n#playerImage#0;n#Canvas#0" expanded="false" />
+            <element signature="e#2746#3602#0" expanded="false" />
+            <element signature="e#4103#4869#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -797,26 +822,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/script.es6">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="7" selection-start-line="39" selection-start-column="4" selection-end-line="41" selection-end-column="7" />
+        <state relative-caret-position="270">
+          <caret line="18" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/canvasView.es6">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1935">
-          <caret line="129" column="41" selection-start-line="129" selection-start-column="41" selection-end-line="129" selection-end-column="41" />
+        <state relative-caret-position="480">
+          <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -833,48 +866,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/playerModule.es6">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="47" column="31" selection-start-line="44" selection-start-column="4" selection-end-line="47" selection-end-column="31" />
+        <state relative-caret-position="365">
+          <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
           <folding>
-            <element signature="e#177#205#0" expanded="false" />
+            <element signature="e#287#315#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="47" selection-start-line="0" selection-start-column="0" selection-end-line="47" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/map.es6">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+        <state relative-caret-position="1020">
+          <caret line="68" column="39" selection-start-line="68" selection-start-column="39" selection-end-line="68" selection-end-column="39" />
+          <folding>
+            <element signature="e#4495#4634#0" expanded="false" />
+            <element signature="e#4728#4883#0" expanded="false" />
+            <element signature="e#4925#5080#0" expanded="false" />
+            <element signature="e#5105#5244#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/script.es6">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/src/canvasView.es6">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="117">
+          <caret line="60" column="73" selection-start-line="60" selection-start-column="73" selection-end-line="60" selection-end-column="73" />
+          <folding>
+            <element signature="n#!!block;n#clearRect#0;n#Canvas#0" expanded="false" />
+            <element signature="n#!!block;n#loadImages#0;n#Canvas#0" expanded="false" />
+            <element signature="n#!!block;n#playerImage#0;n#Canvas#0" expanded="false" />
+            <element signature="e#2746#3602#0" expanded="false" />
+            <element signature="e#4103#4869#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="webServersAuthStorage">
-    <data>AAAAsBM9zgZbRun39/cm1n+H9DIB2xdHLH6O1J1lZDtePoSOfmma0G2QgWz+XfJPBTd7wf0epPLAhP+3jrObnDbpbWUkOd0adw3TNva6JS7wRbRyrSLv52+y+JZcIZZZiYYiENrTRfBRWP5inZF93eJui48lo8DpXqxkmtfi0awtYe/rhDdMckKCkvXubkpNGBz8FOGjvnO4rM7MSN8NjVVkS9ZD741IdsCS4YEKn9RkHRPDGx2Q1AwBi3QblBO7Ru/Nng==</data>
+    <data>AAAAsGHgDV0ZOemvNJOdzBCHxauy1ac1Q4OiNjehi40snRhehA80bh4dGQF2EF+DaEk6H/AmyMY7nWbJ4Me+IlSVLjR1m7kiIW5wqzGuDK8laTJkFNHJnHiZX1Q3k+cp6R5/eFfsYu4nKywwuYXBdzF6Va2fYajSmhn13BXzMFvU2RCytuwj7Oz2eDeIn7ejU5aXWvc1NCUocup3zvl37dEVQ07GG8jTQqjBNv+q4mB75wCRhaIQs88//SaV9ZJ5H454dw==</data>
   </component>
 </project>

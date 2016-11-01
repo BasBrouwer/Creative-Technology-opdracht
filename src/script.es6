@@ -35,7 +35,8 @@ class Controller {
     // player
     // =============================================================================
     this.canvas.draw(this.player.playerProps);
-    this.player.score(this.score);
+    this.canvas.playerScore(this.player.playerScore);
+    this.player.scoreModule(this.score);
 
     window.requestAnimationFrame(() => { // loops the main content
       this.loop();

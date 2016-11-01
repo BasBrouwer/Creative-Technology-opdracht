@@ -1,66 +1,193 @@
 class Canvas {
   constructor(){
+    // het speelveld
     this.c = document.getElementById("myCanvas");
     this.ctx = this.c.getContext("2d");
 
-    this.cHidden = document.getElementById("hideCanvas");
-    this.ctxHidden = this.cHidden.getContext("2d");
+    //canvas for the game data
+    this.cData = document.getElementById("levelData");
+    this.ctxData = this.cData.getContext("2d");
 
-
+    //array for the sprites
     this.mineralTiles = [];
     this.playerGfx = [];
 
+
+    //scale of the game, the scale of the tiles etc.
     this.scale = 35;
 
+    //load the sprite and set a default image
     this.loadImages();
     this.image;
+    this.playerImg = {
+      img: this.playerGfx[0],
+      xPos: 0,
+      yPos: 0,
+      w: 0,
+      h: 0,
+      xS: 0,
+      yS: 0
+    };
     this.alpha = 1;
 
   }
 
   clearRect(){
+    //clear canvas
     this.ctx.clearRect(0,0,this.c.width, this.c.height);
+    this.ctxData.clearRect(0,0,this.c.width, this.c.height);
   }
 
+  // Load all images of the game
+  // =============================================================================
+  loadImages(){
+    for(var t = 0; t < 12; t++) {
+      this.mineralTiles[t] = new Image();
+      this.mineralTiles[t].src = "./img/Minerals/" + (t+1) + ".png" ;
+    }
+    this.playerGfx[0] = new Image();
+    this.playerGfx[0].src = "./img/side.png";
+    this.playerGfx[1] = new Image();
+    this.playerGfx[1].src = "./img/top.png";
+  }
+
+  // Player draw
+  // =============================================================================
   draw(props) {
+    this.playerImage(props);
+
     this.ctx.drawImage(
-      this.playerGfx[1],
-      0, 	                // x positie afb
-      0,                  // y positie afb
-      480,  	            // grote van x breedte
-      480, 	              // grote van y in hoogte
+      this.playerImg.img,
+      this.playerImg.xPos, 	                             // x positie afb
+      this.playerImg.yPos,                               // y positie afb
+      35,  	                         // grote van x breedte
+      35, 	                          // grote van y in hoogte
       (props.x * this.scale), 		              // x as plaatsing
       (props.y * this.scale), 		              // y as plaatsing
-      this.scale,  	      // grote afbeelding
-      this.scale,     	  // grote afbeelidng
+      this.scale,  	                            // grote afbeelding
+      this.scale,     	                      // grote afbeelidng
     );
   }
-
-  drawMap(mapLayout){
-    mapLayout.map.forEach( (row, i) => {
-      row.forEach((tile, j) => {
-          this.drawTile(j,i, tile);
-      })
-    })
+  // welke afb voor speler
+  playerImage(pProps){
+    if(pProps.richting === 1){
+      this.playerImg = {
+        img: this.playerGfx[0],
+        xPos: 0,
+        yPos: 35,
+      };
+    }
+    if(pProps.richting === 2){
+      this.playerImg = {
+        img: this.playerGfx[1],
+        xPos: 0,
+        yPos: 37,
+      };
+    }
+    if(pProps.richting === 3){
+      this.playerImg = {
+        img: this.playerGfx[0],
+        xPos: 0,
+        yPos: 0,
+      };
+    }
+    if(pProps.richting === 4){
+      this.playerImg = {
+        img: this.playerGfx[1],
+        xPos: 0,
+        yPos: 0,
+      };
+    }
   }
 
+  // Draw the "fog"
+  // =============================================================================
+  /* tutorial gevolgd om de tiles te tekenen
+
+    heb wel veel van de code gewijzigd aangezien het in een oudere taal staat en beetje onhandig voor mij zelf
+    heb
+
+    http://www.creativebloq.com/html5/build-tile-based-html5-game-31410992
+
+    orginele code
+
+      MapRenderer.draw and MapRenderer.drawTile
+      draw: function(){
+      var self = this;
+      this.context.clearRect(0, 0, this.w, this.h);
+      this.context.fillStyle = "rgba(255,0,0,0.6)";
+      _(this.map).each(function(row,i){
+        _(row).each(function(tile,j){
+          if(tile !== 0){ //if tile is not walkable
+            self.drawTile(j,i); //draw a rectangle at j,i
+          }
+        });
+      });
+
+        drawTile: function(x,y){
+        this.context.fillRect(
+          x * this.tileSize, y * this.tileSize,
+          this.tileSize, this.tileSize
+        );
+      }
+   */ // tutorial gevolgd voor de tiles te tekenen
   drawHiddenMap(mapLayout){
     mapLayout.hidden.forEach( (row, i) => {
       row.forEach((tile, j) => {
         if(tile === 1){
-          this.drawTileHide(j,i, tile);
+          this.drawTileHide(j,i);
         }
       })
     })
   }
 
-  drawTileHide(x, y, tile){
+  drawTileHide(x, y){
     this.ctx.fillStyle = "black";
     this.ctx.fillRect((x * this.scale), (y * this.scale), this.scale, this.scale);
   }
 
+  // Draw the tiles of the map
+  // =============================================================================
+
+  /* tutorial gevolgd om de tiles te tekenen
+
+   heb wel veel van de code gewijzigd aangezien het in een oudere taal staat en beetje onhandig voor mij zelf
+   heb
+
+   http://www.creativebloq.com/html5/build-tile-based-html5-game-31410992
+
+   orginele code
+
+   MapRenderer.draw and MapRenderer.drawTile
+   draw: function(){
+   var self = this;
+   this.context.clearRect(0, 0, this.w, this.h);
+   this.context.fillStyle = "rgba(255,0,0,0.6)";
+   _(this.map).each(function(row,i){
+   _(row).each(function(tile,j){
+   if(tile !== 0){ //if tile is not walkable
+   self.drawTile(j,i); //draw a rectangle at j,i
+   }
+   });
+   });
+
+   drawTile: function(x,y){
+   this.context.fillRect(
+   x * this.tileSize, y * this.tileSize,
+   this.tileSize, this.tileSize
+   );
+   }
+   */ // tutorial gevolgd voor de tiles te tekenen
+  drawMap(mapLayout){
+    mapLayout.map.forEach( (row, i) => {
+      row.forEach((tile, j) => {
+        this.drawTile(j,i, tile);
+      })
+    })
+  }
+
   drawTile(x, y, tile){
-    this.whatImage(tile);
+    this.whatImage(tile); // bepaald welke afbeelding gebruikt gaat worden
     this.ctx.globalAlpha = this.alpha;
     this.ctx.drawImage(
       this.image,
@@ -76,6 +203,9 @@ class Canvas {
   }
 
   whatImage(tile) {
+    //aan de hand van welk nummer de tile heeft krijgt het een bepaalde sprite om deze te bepalen.
+    // staan ze hier beschreven
+
     this.alpha = 1;
 
     // borders
@@ -117,21 +247,22 @@ class Canvas {
     }
   }
 
-  get size(){
-    return {
-      cWidth: this.c.width,
-      cHeight: this.c.height,
-    }
+  // level data canvas
+  // =============================================================================
+  playerScore(score){
+    this.drawText("15px helvetica", ("Blocks: " + score.blocks), 0, 65);
+    this.drawText("20px helvetica", "Bas", 0, 50);
   }
 
-  loadImages(){
-    for(var t = 0; t < 12; t++) {
-      this.mineralTiles[t] = new Image();
-      this.mineralTiles[t].src = "./img/Minerals/" + (t+1) + ".png" ;
-    }
-    this.playerGfx[1] = new Image();
-    this.playerGfx[1].src = "./img/1.png";
+  drawSearch(){
+
   }
+
+  drawText(size, text, xPos, yPos){
+    this.ctxData.font= size;
+    this.ctxData.fillText(text,xPos,yPos);
+  }
+
 }
 
 module.exports = Canvas;
