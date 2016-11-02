@@ -29,7 +29,7 @@ class Controller {
     // Map
     // =============================================================================
     this.canvas.drawMap(this.map.mapLayout);
-    // this.canvas.drawHiddenMap(this.map.mapLayout);
+    this.canvas.drawHiddenMap(this.map.mapLayout);
     this.score = this.map.mapSpot(this.player.playerProps);
 
     // player

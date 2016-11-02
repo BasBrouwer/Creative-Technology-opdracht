@@ -195,8 +195,8 @@ class Canvas {
       0,                  // y positie afb
       256,  	            // grote van x breedte
       256, 	              // grote van y in hoogte
-      (x * this.scale), 		              // x as plaatsing
-      (y * this.scale), 		              // y as plaatsing
+      (x * this.scale), 	// x as plaatsing
+      (y * this.scale), 	// y as plaatsing
       this.scale,  	      // grote afbeelding
       this.scale,     	  // grote afbeelidng
     );
@@ -212,10 +212,6 @@ class Canvas {
     if(tile === 9){
       this.image = this.mineralTiles[7];
     }
-    if(tile === 8){
-      this.image = this.mineralTiles[6];
-    }
-
     // dirt
     if(tile === 1) {
       this.image = this.mineralTiles[8];
@@ -254,17 +250,36 @@ class Canvas {
     this.drawText("20px helvetica", score.name, 0, 50);
   }
 
-  assignment(score){
+  assignment(props){
     this.drawText("20px helvetica", "Opdracht", 0, 150);
-    this.drawText("12px helvetica", score.coal, 0, 170);
-    this.drawText("12px helvetica", score.bronze, 0, 185);
-    this.drawText("12px helvetica", score.zilver, 0, 200);
-    this.drawText("12px helvetica", score.goud, 0, 215);
+    this.drawText("17px helvetica", (props.score.coal + " / " + props.opdracht.coal), (this.scale + 5), 195);
+    this.tileOpdracht(0, 170, 2);
+    this.drawText("17px helvetica", (props.score.bronze + " / " + props.opdracht.coal), (this.scale + 5), 230);
+    this.tileOpdracht(0, 205, 3);
+    this.drawText("17px helvetica", (props.score.zilver + " / " + props.opdracht.coal), (this.scale + 5), 265);
+    this.tileOpdracht(0, 240, 4);
+    this.drawText("17px helvetica", (props.score.goud + " / " + props.opdracht.coal), (this.scale + 5), 300);
+    this.tileOpdracht(0, 275, 5);
   }
 
   drawText(size, text, xPos, yPos){
     this.ctxData.font= size;
     this.ctxData.fillText(text,xPos,yPos);
+  }
+
+  tileOpdracht(x, y, tile){
+    this.whatImage(tile); // bepaald welke afbeelding gebruikt gaat worden
+    this.ctxData.drawImage(
+      this.image,
+      0, 	                // x positie afb
+      0,                  // y positie afb
+      256,  	            // grote van x breedte
+      256, 	              // grote van y in hoogte
+      x, 	// x as plaatsing
+      y, 	// y as plaatsing
+      this.scale,  	      // grote afbeelding
+      this.scale,     	  // grote afbeelidng
+    );
   }
 
 }

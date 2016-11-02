@@ -185,6 +185,8 @@ class Map {
 
       let random = this.randomMapPlace();
 
+      //zolang this.map random gelijk is aan een 9 gaan we de random opniew uitvoeren.
+      //anders kan het blokje opgesloten raken in een gebied waar je niet kan komen
       while (this.map[random.y][random.x] === 9) {
         random = this.randomMapPlace();
       }

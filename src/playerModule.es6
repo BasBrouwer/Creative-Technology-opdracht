@@ -17,6 +17,14 @@ class Player {
       goud: 0,
     };
 
+    this.opdracht = {
+      blocks: 0,
+      coal: 0,
+      bronze: 0,
+      zilver: 0,
+      goud: 0,
+    };
+
     this.speed = 1;
     this.lastMove;
   }
@@ -86,6 +94,9 @@ class Player {
     }
   }
 
+
+  // Score kijken welke blok je net hebt gehad en bij de juiste een punt bij doen
+  // =============================================================================
   scoreModule(score){
     // kijken welke mineral je oppakt
     if(!(score === 'undefined')){
@@ -107,6 +118,34 @@ class Player {
     }
   }
 
+  opdracht(){
+    let xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (xhttp.readyState == 4 && xhttp.status == 200) {
+        this.parseData(xhttp.responseText);
+      }
+    };
+    xhttp.open("GET", "http://bbrouwer6.acue.webpages.avans.nl/game/php/getLevel/", true);
+    xhttp.send();
+  }
+
+  parseData(data) {
+    var item = JSON.parse(data);
+    for (var i = 0; i < item.length; i++) {
+      var newObject = {
+        avatar: item[i].avatar,
+        name: item[i].name,
+        message: item[i].message,
+        height: item[i].avatar_height,
+        id: item[i].id
+      };
+      objectArray.push(newObject);
+    }
+  }
+
+  // get functie voor de speler en de score
+  // =============================================================================
+
   get playerProps(){
     return {
       name: this.props.name,
@@ -119,7 +158,11 @@ class Player {
   }
 
   get playerScore(){
-    return this.score;
+    return {
+      score: this.score,
+      opdracht: this.opdracht
+    }
+
   }
 }
 
