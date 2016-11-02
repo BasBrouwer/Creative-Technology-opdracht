@@ -251,11 +251,15 @@ class Canvas {
   // =============================================================================
   playerScore(score){
     this.drawText("15px helvetica", ("Blocks: " + score.blocks), 0, 65);
-    this.drawText("20px helvetica", "Bas", 0, 50);
+    this.drawText("20px helvetica", score.name, 0, 50);
   }
 
-  drawSearch(){
-
+  assignment(score){
+    this.drawText("20px helvetica", "Opdracht", 0, 150);
+    this.drawText("12px helvetica", score.coal, 0, 170);
+    this.drawText("12px helvetica", score.bronze, 0, 185);
+    this.drawText("12px helvetica", score.zilver, 0, 200);
+    this.drawText("12px helvetica", score.goud, 0, 215);
   }
 
   drawText(size, text, xPos, yPos){

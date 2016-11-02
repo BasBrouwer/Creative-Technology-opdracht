@@ -9,6 +9,7 @@ class Player {
     };
 
     this.score = {
+      name: "Bas",
       blocks: 0,
       coal: 0,
       bronze: 0,
@@ -53,38 +54,40 @@ class Player {
   // =============================================================================
   movement(direction, map){
     // bepaald de snelheid in hoe vaak je per zoveel tijd een kant op mag lopen
-    if(Date.now() - this.lastMove <= 100)
+    if(Date.now() - this.lastMove <= 50)
         return;
 
     this.lastMove = Date.now();
 
+    // richting bepalen. kijken of je opstakel tegen komt of niet.
     if (direction.up){
+      this.props.richting = 2;
       if (map.map[this.props.y-1][this.props.x] === 9)
         return;
       this.props.y -= this.speed;
-      this.props.richting = 2;
     }
     else if (direction.down){
+      this.props.richting = 4;
       if (map.map[this.props.y+1][this.props.x] === 9)
         return;
       this.props.y += this.speed;
-      this.props.richting = 4;
     }
     else if (direction.left){
+      this.props.richting = 1;
       if (map.map[this.props.y][this.props.x-1] === 9)
         return;
       this.props.x -= this.speed;
-      this.props.richting = 1;
     }
     else if (direction.right){
+      this.props.richting = 3;
       if (map.map[this.props.y][this.props.x+1] === 9)
         return;
       this.props.x += this.speed;
-      this.props.richting = 3;
     }
   }
 
   scoreModule(score){
+    // kijken welke mineral je oppakt
     if(!(score === 'undefined')){
       if(score.blocks === 1) {
         this.score.blocks += 1;
@@ -106,6 +109,7 @@ class Player {
 
   get playerProps(){
     return {
+      name: this.props.name,
       x: this.props.x,
       y: this.props.y,
       width: this.props.width,

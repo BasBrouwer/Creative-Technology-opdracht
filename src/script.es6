@@ -29,14 +29,18 @@ class Controller {
     // Map
     // =============================================================================
     this.canvas.drawMap(this.map.mapLayout);
-    this.canvas.drawHiddenMap(this.map.mapLayout);
+    // this.canvas.drawHiddenMap(this.map.mapLayout);
     this.score = this.map.mapSpot(this.player.playerProps);
 
     // player
     // =============================================================================
     this.canvas.draw(this.player.playerProps);
-    this.canvas.playerScore(this.player.playerScore);
     this.player.scoreModule(this.score);
+
+    // score update
+    // =============================================================================
+    this.canvas.playerScore(this.player.playerScore);
+    this.canvas.assignment(this.player.playerScore);
 
     window.requestAnimationFrame(() => { // loops the main content
       this.loop();
