@@ -62,7 +62,7 @@ class Canvas {
       this.playerImg.yPos,                               // y positie afb
       35,  	                         // grote van x breedte
       35, 	                          // grote van y in hoogte
-      (props.x * this.scale), 		              // x as plaatsing
+      (props.x * this.scale), 		     // x as plaatsing
       (props.y * this.scale), 		              // y as plaatsing
       this.scale,  	                            // grote afbeelding
       this.scale,     	                      // grote afbeelidng
@@ -245,25 +245,25 @@ class Canvas {
 
   // level data canvas
   // =============================================================================
-  playerScore(score){
-    this.drawText("15px helvetica", ("Blocks: " + score.blocks), 0, 65);
-    this.drawText("20px helvetica", score.name, 0, 50);
+  playerScore(props){
+    this.drawText("15px helvetica", ("Blocks: " + props.blocks), 0, 65);
+    this.drawText("20px helvetica", props.name, 0, 50);
   }
 
-  assignment(props){
+  assignment(playerScore, opdrScore ){
     this.drawText("20px helvetica", "Opdracht", 0, 150);
-    this.drawText("17px helvetica", (props.score.coal + " / " + props.opdracht.coal), (this.scale + 5), 195);
+    this.drawText("17px helvetica", (playerScore.coal + " / " + opdrScore.levelData.coal), (this.scale + 5), 195);
     this.tileOpdracht(0, 170, 2);
-    this.drawText("17px helvetica", (props.score.bronze + " / " + props.opdracht.coal), (this.scale + 5), 230);
+    this.drawText("17px helvetica", (playerScore.bronze + " / " + opdrScore.levelData.bronze), (this.scale + 5), 230);
     this.tileOpdracht(0, 205, 3);
-    this.drawText("17px helvetica", (props.score.zilver + " / " + props.opdracht.coal), (this.scale + 5), 265);
+    this.drawText("17px helvetica", (playerScore.zilver + " / " + opdrScore.levelData.zilver), (this.scale + 5), 265);
     this.tileOpdracht(0, 240, 4);
-    this.drawText("17px helvetica", (props.score.goud + " / " + props.opdracht.coal), (this.scale + 5), 300);
+    this.drawText("17px helvetica", (playerScore.goud + " / " + opdrScore.levelData.goud), (this.scale + 5), 300);
     this.tileOpdracht(0, 275, 5);
   }
 
   drawText(size, text, xPos, yPos){
-    this.ctxData.font= size;
+    this.ctxData.font = size;
     this.ctxData.fillText(text,xPos,yPos);
   }
 

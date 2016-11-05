@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf6022b0-8c82-41f2-a3ee-b2bd7db47bdb" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/level.es6" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/script.js" afterPath="$PROJECT_DIR$/dist/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/script.js.map" afterPath="$PROJECT_DIR$/dist/script.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/canvasView.es6" afterPath="$PROJECT_DIR$/src/canvasView.es6" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/map.es6" afterPath="$PROJECT_DIR$/src/map.es6" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/playerModule.es6" afterPath="$PROJECT_DIR$/src/playerModule.es6" />
@@ -35,17 +37,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="9" column="20" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sass/style.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -54,8 +46,8 @@
       <file leaf-file-name="script.es6" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/script.es6">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="201">
+              <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -64,48 +56,47 @@
       <file leaf-file-name="canvasView.es6" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/canvasView.es6">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="262" column="3" selection-start-line="262" selection-start-column="3" selection-end-line="262" selection-end-column="3" />
+            <state relative-caret-position="2100">
+              <caret line="254" column="80" selection-start-line="254" selection-start-column="80" selection-end-line="254" selection-end-column="80" />
               <folding>
                 <element signature="n#!!block;n#clearRect#0;n#Canvas#0" expanded="false" />
                 <element signature="n#!!block;n#loadImages#0;n#Canvas#0" expanded="false" />
                 <element signature="n#!!block;n#playerImage#0;n#Canvas#0" expanded="false" />
-                <element signature="e#2746#3602#0" expanded="false" />
-                <element signature="e#4103#4869#0" expanded="false" />
-                <element signature="e#5826#5874#0" expanded="false" />
-                <element signature="e#5906#5954#0" expanded="false" />
-                <element signature="e#5990#6038#0" expanded="false" />
-                <element signature="e#6057#6105#0" expanded="false" />
-                <element signature="e#6124#6172#0" expanded="false" />
-                <element signature="e#6191#6239#0" expanded="false" />
-                <element signature="e#6258#6306#0" expanded="false" />
-                <element signature="e#6325#6373#0" expanded="false" />
+                <element signature="e#2737#3593#0" expanded="false" />
+                <element signature="e#4094#4860#0" expanded="false" />
+                <element signature="e#5817#5865#0" expanded="false" />
+                <element signature="e#5897#5945#0" expanded="false" />
+                <element signature="e#5981#6029#0" expanded="false" />
+                <element signature="e#6048#6096#0" expanded="false" />
+                <element signature="e#6115#6163#0" expanded="false" />
+                <element signature="e#6182#6230#0" expanded="false" />
+                <element signature="e#6249#6297#0" expanded="false" />
+                <element signature="e#6316#6364#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="keyModule.es6" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/keyModule.es6">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="38" column="3" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
-              <folding>
-                <element signature="e#39#61#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="playerModule.es6" pinned="false" current-in-tab="true">
+      <file leaf-file-name="playerModule.es6" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/playerModule.es6">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="135" column="31" selection-start-line="135" selection-start-column="31" selection-end-line="135" selection-end-column="31" />
+            <state relative-caret-position="-135">
+              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
               <folding>
-                <element signature="e#417#445#0" expanded="false" />
+                <element signature="e#306#334#0" expanded="false" />
+                <element signature="n#!!block;n#movement#0;n#Player#0" expanded="false" />
                 <element signature="n#!!block;n#scoreModule#0;n#Player#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="level.es6" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/level.es6">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="72" column="20" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -113,17 +104,19 @@
       <file leaf-file-name="map.es6" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/map.es6">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="182" column="32" selection-start-line="182" selection-start-column="32" selection-end-line="182" selection-end-column="32" />
+            <state relative-caret-position="465">
+              <caret line="209" column="25" selection-start-line="209" selection-start-column="25" selection-end-line="209" selection-end-column="25" />
               <folding>
+                <element signature="e#122#1509#0" expanded="false" />
+                <element signature="e#1530#2917#0" expanded="false" />
                 <element signature="n#!!block;n#mapSpot#0;n#Map#0" expanded="false" />
                 <element signature="n#!!block;n#clearHidden#0;n#Map#0" expanded="false" />
-                <element signature="n#!!block;n#coal#0;n#Map#0" expanded="false" />
-                <element signature="n#!!block;n#bronze#0;n#Map#0" expanded="false" />
-                <element signature="n#!!block;n#ijzer#0;n#Map#0" expanded="false" />
-                <element signature="n#!!block;n#zilver#0;n#Map#0" expanded="false" />
                 <element signature="n#!!block;n#randomPuntenSet#0;n#Map#0" expanded="false" />
                 <element signature="n#!!block;n#randomMapPlace#0;n#Map#0" expanded="false" />
+                <element signature="e#6284#7671#0" expanded="false" />
+                <element signature="e#7716#9145#0" expanded="false" />
+                <element signature="e#9201#10630#0" expanded="false" />
+                <element signature="e#10686#12115#0" expanded="false" />
                 <element signature="n#!!block;n#mapLayout#0;n#Map#0" expanded="false" />
               </folding>
             </state>
@@ -156,13 +149,14 @@
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/src/collisionModule.es6" />
         <option value="$PROJECT_DIR$/src/keyModule.es6" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/sass/style.scss" />
-        <option value="$PROJECT_DIR$/src/script.es6" />
-        <option value="$PROJECT_DIR$/src/map.es6" />
-        <option value="$PROJECT_DIR$/src/script.es6" />
         <option value="$PROJECT_DIR$/src/canvasView.es6" />
         <option value="$PROJECT_DIR$/src/playerModule.es6" />
+        <option value="$PROJECT_DIR$/src/level.es6" />
+        <option value="$PROJECT_DIR$/src/map.es6" />
+        <option value="$PROJECT_DIR$/src/script.es6" />
+        <option value="$PROJECT_DIR$/src/script.es6" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -176,8 +170,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -204,6 +198,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -264,24 +259,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="getPlayer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CT-Game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CT-Game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="getLevel" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -296,18 +273,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="addPlayer" />
+              <option name="myItemId" value="dist" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -433,7 +405,9 @@
       <workItem from="1477648952165" duration="597000" />
       <workItem from="1477654237240" duration="596000" />
       <workItem from="1477853156132" duration="665000" />
-      <workItem from="1478012096291" duration="19264000" />
+      <workItem from="1478012096291" duration="23902000" />
+      <workItem from="1478170592550" duration="9906000" />
+      <workItem from="1478280553803" duration="4590000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1476269336840</created>
@@ -512,11 +486,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478088804101</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="update">
+      <created>1478098095537</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1478098095537</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92145000" />
+    <option name="totallyTimeSpent" value="111279000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -528,16 +509,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32832617" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24821173" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10543131" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32968238" sideWeight="0.49815303" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32968238" sideWeight="0.5039578" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22255866" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20273632" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23882113" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.49604222" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -546,6 +526,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22139303" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -594,49 +575,13 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sass/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/canvasView.es6">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding>
-            <element signature="n#!!block;n#clearRect#0;n#Canvas#0" expanded="false" />
-            <element signature="n#!!block;n#loadImages#0;n#Canvas#0" expanded="false" />
-            <element signature="n#!!block;n#playerImage#0;n#Canvas#0" expanded="false" />
-            <element signature="e#2746#3602#0" expanded="false" />
-            <element signature="e#4103#4869#0" expanded="false" />
-            <element signature="e#5826#5874#0" expanded="false" />
-            <element signature="e#5906#5954#0" expanded="false" />
-            <element signature="e#5990#6038#0" expanded="false" />
-            <element signature="e#6057#6105#0" expanded="false" />
-            <element signature="e#6124#6172#0" expanded="false" />
-            <element signature="e#6191#6239#0" expanded="false" />
-            <element signature="e#6258#6306#0" expanded="false" />
-            <element signature="e#6325#6373#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/collisionModule.es6">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/playerModule.es6">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#417#445#0" expanded="false" />
+            <element signature="e#306#334#0" expanded="false" />
+            <element signature="n#!!block;n#movement#0;n#Player#0" expanded="false" />
             <element signature="n#!!block;n#scoreModule#0;n#Player#0" expanded="false" />
           </folding>
         </state>
@@ -657,14 +602,16 @@
         <state relative-caret-position="270">
           <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
           <folding>
+            <element signature="e#122#1509#0" expanded="false" />
+            <element signature="e#1530#2917#0" expanded="false" />
             <element signature="n#!!block;n#mapSpot#0;n#Map#0" expanded="false" />
             <element signature="n#!!block;n#clearHidden#0;n#Map#0" expanded="false" />
-            <element signature="n#!!block;n#coal#0;n#Map#0" expanded="false" />
-            <element signature="n#!!block;n#bronze#0;n#Map#0" expanded="false" />
-            <element signature="n#!!block;n#ijzer#0;n#Map#0" expanded="false" />
-            <element signature="n#!!block;n#zilver#0;n#Map#0" expanded="false" />
             <element signature="n#!!block;n#randomPuntenSet#0;n#Map#0" expanded="false" />
             <element signature="n#!!block;n#randomMapPlace#0;n#Map#0" expanded="false" />
+            <element signature="e#6284#7671#0" expanded="false" />
+            <element signature="e#7716#9145#0" expanded="false" />
+            <element signature="e#9201#10630#0" expanded="false" />
+            <element signature="e#10686#12115#0" expanded="false" />
             <element signature="n#!!block;n#mapLayout#0;n#Map#0" expanded="false" />
           </folding>
         </state>
@@ -694,16 +641,16 @@
             <element signature="n#!!block;n#clearRect#0;n#Canvas#0" expanded="false" />
             <element signature="n#!!block;n#loadImages#0;n#Canvas#0" expanded="false" />
             <element signature="n#!!block;n#playerImage#0;n#Canvas#0" expanded="false" />
-            <element signature="e#2746#3602#0" expanded="false" />
-            <element signature="e#4103#4869#0" expanded="false" />
-            <element signature="e#5826#5874#0" expanded="false" />
-            <element signature="e#5906#5954#0" expanded="false" />
-            <element signature="e#5990#6038#0" expanded="false" />
-            <element signature="e#6057#6105#0" expanded="false" />
-            <element signature="e#6124#6172#0" expanded="false" />
-            <element signature="e#6191#6239#0" expanded="false" />
-            <element signature="e#6258#6306#0" expanded="false" />
-            <element signature="e#6325#6373#0" expanded="false" />
+            <element signature="e#2737#3593#0" expanded="false" />
+            <element signature="e#4094#4860#0" expanded="false" />
+            <element signature="e#5817#5865#0" expanded="false" />
+            <element signature="e#5897#5945#0" expanded="false" />
+            <element signature="e#5981#6029#0" expanded="false" />
+            <element signature="e#6048#6096#0" expanded="false" />
+            <element signature="e#6115#6163#0" expanded="false" />
+            <element signature="e#6182#6230#0" expanded="false" />
+            <element signature="e#6249#6297#0" expanded="false" />
+            <element signature="e#6316#6364#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -727,7 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -888,23 +834,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/script.es6.js" />
-    <entry file="file://$PROJECT_DIR$/dist/script.js.map">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css" />
     <entry file="file://$PROJECT_DIR$/src/view.es6" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -920,7 +849,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -932,35 +860,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/collisionModule.es6">
+    <entry file="file://$PROJECT_DIR$/src/collisionModule.es6" />
+    <entry file="file://$PROJECT_DIR$/dist/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="1515">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/dist/script.js.map">
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="20" />
+        <state relative-caret-position="-3997">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="49">
           <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/script.es6">
+    <entry file="file://$PROJECT_DIR$/php/getLevel/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="195">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/db_connection-json.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -974,59 +911,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/map.es6">
+    <entry file="file://$PROJECT_DIR$/src/playerModule.es6">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="182" column="32" selection-start-line="182" selection-start-column="32" selection-end-line="182" selection-end-column="32" />
+        <state relative-caret-position="-135">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
           <folding>
-            <element signature="n#!!block;n#mapSpot#0;n#Map#0" expanded="false" />
-            <element signature="n#!!block;n#clearHidden#0;n#Map#0" expanded="false" />
-            <element signature="n#!!block;n#coal#0;n#Map#0" expanded="false" />
-            <element signature="n#!!block;n#bronze#0;n#Map#0" expanded="false" />
-            <element signature="n#!!block;n#ijzer#0;n#Map#0" expanded="false" />
-            <element signature="n#!!block;n#zilver#0;n#Map#0" expanded="false" />
-            <element signature="n#!!block;n#randomPuntenSet#0;n#Map#0" expanded="false" />
-            <element signature="n#!!block;n#randomMapPlace#0;n#Map#0" expanded="false" />
-            <element signature="n#!!block;n#mapLayout#0;n#Map#0" expanded="false" />
+            <element signature="e#306#334#0" expanded="false" />
+            <element signature="n#!!block;n#movement#0;n#Player#0" expanded="false" />
+            <element signature="n#!!block;n#scoreModule#0;n#Player#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/canvasView.es6">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="262" column="3" selection-start-line="262" selection-start-column="3" selection-end-line="262" selection-end-column="3" />
+        <state relative-caret-position="2100">
+          <caret line="254" column="80" selection-start-line="254" selection-start-column="80" selection-end-line="254" selection-end-column="80" />
           <folding>
             <element signature="n#!!block;n#clearRect#0;n#Canvas#0" expanded="false" />
             <element signature="n#!!block;n#loadImages#0;n#Canvas#0" expanded="false" />
             <element signature="n#!!block;n#playerImage#0;n#Canvas#0" expanded="false" />
-            <element signature="e#2746#3602#0" expanded="false" />
-            <element signature="e#4103#4869#0" expanded="false" />
-            <element signature="e#5826#5874#0" expanded="false" />
-            <element signature="e#5906#5954#0" expanded="false" />
-            <element signature="e#5990#6038#0" expanded="false" />
-            <element signature="e#6057#6105#0" expanded="false" />
-            <element signature="e#6124#6172#0" expanded="false" />
-            <element signature="e#6191#6239#0" expanded="false" />
-            <element signature="e#6258#6306#0" expanded="false" />
-            <element signature="e#6325#6373#0" expanded="false" />
+            <element signature="e#2737#3593#0" expanded="false" />
+            <element signature="e#4094#4860#0" expanded="false" />
+            <element signature="e#5817#5865#0" expanded="false" />
+            <element signature="e#5897#5945#0" expanded="false" />
+            <element signature="e#5981#6029#0" expanded="false" />
+            <element signature="e#6048#6096#0" expanded="false" />
+            <element signature="e#6115#6163#0" expanded="false" />
+            <element signature="e#6182#6230#0" expanded="false" />
+            <element signature="e#6249#6297#0" expanded="false" />
+            <element signature="e#6316#6364#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/playerModule.es6">
+    <entry file="file://$PROJECT_DIR$/src/map.es6">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="135" column="31" selection-start-line="135" selection-start-column="31" selection-end-line="135" selection-end-column="31" />
+        <state relative-caret-position="465">
+          <caret line="209" column="25" selection-start-line="209" selection-start-column="25" selection-end-line="209" selection-end-column="25" />
           <folding>
-            <element signature="e#417#445#0" expanded="false" />
-            <element signature="n#!!block;n#scoreModule#0;n#Player#0" expanded="false" />
+            <element signature="e#122#1509#0" expanded="false" />
+            <element signature="e#1530#2917#0" expanded="false" />
+            <element signature="n#!!block;n#mapSpot#0;n#Map#0" expanded="false" />
+            <element signature="n#!!block;n#clearHidden#0;n#Map#0" expanded="false" />
+            <element signature="n#!!block;n#randomPuntenSet#0;n#Map#0" expanded="false" />
+            <element signature="n#!!block;n#randomMapPlace#0;n#Map#0" expanded="false" />
+            <element signature="e#6284#7671#0" expanded="false" />
+            <element signature="e#7716#9145#0" expanded="false" />
+            <element signature="e#9201#10630#0" expanded="false" />
+            <element signature="e#10686#12115#0" expanded="false" />
+            <element signature="n#!!block;n#mapLayout#0;n#Map#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/script.es6">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/level.es6">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="72" column="20" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
   </component>
   <component name="webServersAuthStorage">
-    <data>AAAAsGHgDV0ZOemvNJOdzBCHxauy1ac1Q4OiNjehi40snRhehA80bh4dGQF2EF+DaEk6H/AmyMY7nWbJ4Me+IlSVLjR1m7kiIW5wqzGuDK8laTJkFNHJnHiZX1Q3k+cp6R5/eFfsYu4nKywwuYXBdzF6Va2fYajSmhn13BXzMFvU2RCytuwj7Oz2eDeIn7ejU5aXWvc1NCUocup3zvl37dEVQ07GG8jTQqjBNv+q4mB75wCRhaIQs88//SaV9ZJ5H454dw==</data>
+    <data>AAAAsIwuWXPOIgLoy6jfqdtppqIIBAY1VmIppDYdJ1izSUZzNK7BASlWdom7DI07nBFId9hHg8Pd5mQILU/vCH7cXhu8lEUJbvQnYnkv0QI2DiP4vXI00Le4oUViMk/XJeBsPvoZJB/9oPJLfEe3RdN9Mgv0WvyDPp/bZjnsg5Ck62bwrgx3qM7bqyM1b/z+7qxZ8DfGo/IDH99DshW8Qge430oDAVBwByDEaBZHST/Qjp2nRozS6jMmhPFUZY4iUz6Yhg==</data>
   </component>
 </project>
