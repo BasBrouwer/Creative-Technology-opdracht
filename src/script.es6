@@ -26,6 +26,7 @@ class Controller {
     });
   }
 
+
   handleKey(data) {
     this.player.movement(data, this.map.mapLayout);
   }
@@ -36,7 +37,7 @@ class Controller {
     // Map
     // =============================================================================
     this.canvas.drawMap(this.map.mapLayout);
-    // this.canvas.drawHiddenMap(this.map.mapLayout);
+    this.canvas.drawHiddenMap(this.map.mapLayout);
     this.score = this.map.mapSpot(this.player.playerProps);
 
     // player
@@ -78,7 +79,7 @@ class Controller {
     this.level.levelOpdracht();
     this.player.levelUpdate();
     this.map.levelUpdate(this.level.assign);
-    this.setMinerals();
+    this.setMineralsMap();
     this.player.sendScore(this.level.assign);
     this.level.highscoreLoad(this.level.assign);
     this.levelUpdate = false;
