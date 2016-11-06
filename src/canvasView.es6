@@ -250,7 +250,28 @@ class Canvas {
     this.drawText("20px helvetica", props.name, 0, 50);
   }
 
-  assignment(playerScore, opdrScore ){
+  // zet de opdracht op het scherm. welke mineralen nodig zijn om te halen
+  assignment(playerScore, opdrScore){
+   if(opdrScore.level < opdrScore.maxLevel){
+    this.drawAssignment(playerScore, opdrScore);
+   }
+   if(opdrScore.level === opdrScore.maxLevel && opdrScore.highsLoad){
+     console.log(opdrScore.highscore);
+    this.complete(opdrScore);
+   }
+  }
+
+  complete(data){
+    this.drawText("17px helvetica", "Completed the game", (this.scale + 5), 195);
+    let yPos = 210;
+    for(var i = 0; i < 5; i++){
+      this.drawText("17px helvetica", (data.highscore[i].name + " / " + data.highscore[i].blocks), 0, yPos);
+      yPos += 15;
+    }
+  }
+
+  //stuurd de benodigde data door naar de functie om de odpracht uit te tekennen/schrijven
+  drawAssignment(playerScore, opdrScore){
     this.drawText("20px helvetica", "Opdracht", 0, 150);
     this.drawText("17px helvetica", (playerScore.coal + " / " + opdrScore.levelData.coal), (this.scale + 5), 195);
     this.tileOpdracht(0, 170, 2);
@@ -262,11 +283,13 @@ class Canvas {
     this.tileOpdracht(0, 275, 5);
   }
 
+  //tekend de text
   drawText(size, text, xPos, yPos){
     this.ctxData.font = size;
     this.ctxData.fillText(text,xPos,yPos);
   }
 
+  //tekend de mineralen op de opdrachten veld.
   tileOpdracht(x, y, tile){
     this.whatImage(tile); // bepaald welke afbeelding gebruikt gaat worden
     this.ctxData.drawImage(

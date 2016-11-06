@@ -139,8 +139,24 @@ class Player {
     }
   }
 
+
   get playerScore(){
     return this.score;
+  }
+
+  // zet de naam van de speler van het spel
+  setPlayerName(name){
+    this.score.name = name;
+  }
+
+  // verstuurd de score naar de database
+  sendScore(data){
+    if(data.level === data.maxLevel){
+      let xhttp = new XMLHttpRequest();
+      xhttp.open("POST", "http://bbrouwer6.acue.webpages.avans.nl/game/php/addPlayer/", true);
+      xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+      xhttp.send("name=" + this.score.name + "&blocks=" + this.score.blocks);
+    }
   }
 
 }

@@ -1,10 +1,14 @@
 class LevelOpties {
   constructor(){
     this.dataOpdrachten = [];
+    this.highscore = [];
+
     this.levelData();
     this.level = 1;
+    this.maxLevel = 4;
 
     this.dataLoad = false;
+    this.highsLoad = false;
     this.levelUpdate = false;
 
     this.opdracht = {
@@ -15,6 +19,8 @@ class LevelOpties {
     };
   }
 
+  // load de data van de opdrachten.
+  // =============================================================================
   levelData(){
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = () => {
@@ -41,6 +47,36 @@ class LevelOpties {
     this.levelOpdracht();
   }
 
+  // load de data van highscore
+  // =============================================================================
+  highscoreLoad(data){
+    if(data.level === 1){
+      let xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = () => {
+        if (xhttp.readyState == 4 && xhttp.status == 200) {
+          this.dataParseScore(xhttp.responseText);
+        }
+      };
+      xhttp.open("GET", "http://bbrouwer6.acue.webpages.avans.nl/game/php/getPlayer/", true);
+      xhttp.send();
+    }
+  }
+
+  dataParseScore(data) {
+    var item = JSON.parse(data);
+    for (var i = 0; i < item.length; i++) {
+      var newObject = {
+        id: item[i].id,
+        name: item[i].name,
+        blocks: item[i].blocks,
+      };
+      this.highscore.push(newObject);
+    }
+    this.highsLoad = true;
+  }
+
+  // kijkt welk level we zitten en zo welke opdracht nodig is.
+  // =============================================================================
   levelOpdracht(){
     if(this.level === 1){
       this.setLevel(this.dataOpdrachten[0]);
@@ -63,12 +99,14 @@ class LevelOpties {
     this.dataLoad = true;
   }
 
+  // kijkt of de level gecomplete is. of alle behaalde onderdelen zijn gehaald.
+  // =============================================================================
   levelComplete(playerScore){
     if(this.opdracht.coal == playerScore.coal &&
       this.opdracht.bronze == playerScore.bronze &&
       this.opdracht.zilver == playerScore.zilver &&
       this.opdracht.goud == playerScore.goud){
-      if(this.level < 4){
+      if(this.level < this.maxLevel){
         this.level += 1;
         return true;
       }
@@ -79,7 +117,9 @@ class LevelOpties {
     return  {
       levelData: this.opdracht,
       level: this.level,
-
+      maxLevel: this.maxLevel,
+      highscore: this.highscore,
+      highsLoad: this.highsLoad,
     }
   }
 }
